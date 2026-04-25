@@ -1,9 +1,17 @@
-name: project-env
+name: huawei-npu-bench
 channels:
   - conda-forge
 dependencies:
-  - python=3.13
+  - python=3.10
   - pip
-  - numpy
+  - numpy=1.26.4
+  - scipy
+  - psutil
+  - attrs
+  - decorator
+  - pyyaml
+  - matplotlib
   - pip:
-    - torch
+    - torch==2.1.0
+    # torch_npu 版本需与 CANN/驱动严格匹配，建议在已加载 Ascend 环境后单独安装
+    # 参考 pyproject.toml 或 scripts/setup_ascend_env.sh

@@ -1,0 +1,22 @@
+[project]
+name = "huawei-npu-bench"
+version = "0.1.0"
+description = "CPU/NPU benchmark framework for Ascend NPU experiments"
+readme = "README_BENCH.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+  "numpy==1.26.4",
+  "scipy>=1.10,<1.13",
+  "psutil>=5.9",
+  "attrs>=23.0",
+  "decorator>=5.1",
+  "pyyaml>=6.0",
+  "matplotlib>=3.8,<3.11",
+  "setuptools<81",
+]
+
+[project.optional-dependencies]
+ascend = [
+  "torch==2.1.0",
+  "torch-npu==2.1.0.post13",
+]

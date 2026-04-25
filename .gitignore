@@ -1,0 +1,46 @@
+# Local Python environments
+.venv/
+venv/
+env/
+.env
+
+# Python cache and test cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Ascend / NPU generated runtime artifacts
+kernel_meta/
+fusion_result.json
+*.om
+*.pbtxt
+*.prof
+
+# Experiment outputs, thesis materials, validation artifacts
+workspace/
+
+# Generated reports, prompts, diagrams, and visualizations
+CPU_NPU_parallel_engineer_prompts.md
+benchmark_flow*.dot
+benchmark_flow*.png
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+*.csv
+*.log
+
+# Local documents
+*.docx
+~$*.docx
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
