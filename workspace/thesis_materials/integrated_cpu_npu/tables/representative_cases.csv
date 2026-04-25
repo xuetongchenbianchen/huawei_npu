@@ -1,0 +1,11 @@
+dataset,op,case_index,case_label,cpu_mean_ms,npu_mean_ms,speedup_cpu_div_npu,precision_ok
+real_npu_extended,gelu,1,"index=1, shape=[2048, 2048]",65.009924,0.048766,1333.090,True
+real_npu_extended,gelu,0,"index=0, shape=[1024, 1024]",16.637926,0.051196,324.988,True
+real_npu_extended,conv2d,1,"index=1, batch=4, k=3, in_c=16...",21.322377,0.065869,323.710,True
+real_npu_extended,silu,1,"index=1, shape=[2048, 2048]",17.970141,0.059370,302.681,True
+real_npu_extended,sdpa,1,"index=1, batch=4, seq_len=256, heads=8...",18.995949,0.147608,128.692,True
+real_npu_extended,silu,0,"index=0, shape=[1024, 1024]",4.818768,0.040297,119.583,True
+real_npu_extended,layernorm,1,"index=1, batch=32, seq_len=256, hidden=1024",18.977903,0.163489,116.081,True
+real_npu_extended,transpose_contiguous,1,"index=1, shape=[2048, 1024]",8.355564,0.085282,97.975,True
+real_npu_extended,conv2d,0,"index=0, batch=1, k=3, in_c=3...",4.907020,0.059502,82.468,True
+real_npu_extended,rmsnorm,1,"index=1, batch=32, seq_len=256, hidden=1024",8.022239,0.124426,64.474,True
